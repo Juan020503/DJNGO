@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado de Tiendas</title>
     <link rel="stylesheet" type="text/css" href="{% static '/css/estilos.css' %}">
-    <link rel="icon" type="image/png" href="{% static 'favicon.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'imagenes/favicon.png' %}">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="{% url 'formulario' %}">Inicio</a></li>
                 <li><a href="#">Tiendas</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +36,19 @@
                 <p>Precio: $4.000 c/u</p>
                 <button>Agregar al carrito</button>
             </div>
-            <!-- Agrega más productos según sea necesario -->
+            <div class="producto">
+                <img src="{% static 'imagenes/galletas.jfif' %}" alt="Gomas">
+                <h2>Galletas Oreo</h2>
+                <p>Deliciosas galletas Oreo con relleno de vainilla.</p>
+                <p>Precio: $8.000 c/u</p>
+                <button>Agregar al carrito</button>
+            </div><div class="producto">
+                <img src="{% static 'imagenes/monster.jfif' %}" alt="Gomas">
+                <h2>Bebida Energetica Monster</h2>
+                <p>Deliciosa bebida para tener energia todo el día.</p>
+                <p>Precio: $7.000 c/u</p>
+                <button>Agregar al carrito</button>
+            </div>
         </div>
     </div>
     

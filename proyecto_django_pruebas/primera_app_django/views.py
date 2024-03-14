@@ -1,7 +1,5 @@
 from django.shortcuts import render
 from . forms import UsuarioForm
-def inicio(request):
-    return render(request,"inicio.html")
 
 def pagina1(request):
     return render(request,"pagina1.html")
@@ -33,3 +31,11 @@ def productos(request, tienda_id):
     tienda = Tienda.objects.get(id=tienda_id)
     productos = Producto.objects.filter(tienda=tienda)
     return render(request, 'productos.html', {'tienda': tienda, 'productos': productos})
+
+from django.shortcuts import render
+from .models import MensajeContacto
+
+def ver_mensajes_contacto(request):
+    mensajes = MensajeContacto.objects.all()
+    return render(request, 'app_contacto/ver_mensajes_contacto.html', {'mensajes': mensajes})
+

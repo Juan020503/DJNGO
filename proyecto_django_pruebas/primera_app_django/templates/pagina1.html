@@ -1,23 +1,25 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mi página web</title>
-    <link rel="icon" type="image/png" href="{% static 'favicon.png' %}">
-  </head>
-  <body>
-    <header>
-      <h1>Página 1</h1>
-      <nav>
-        <ul>
-          <li><a href="{% url 'inicio' %}">Inicio</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Contenido principal</h2>
-      <p>Esta es la página 1.</p>
-    </main>
-  </body>
-</html>
+<html lang="es">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Vendedor</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/vendedor.css' %}">
+</head>
+<body>
+    <div class="contenedor">
+        <header>Perfil del Vendedor</header>
+        <div class="perfil-vendedor">
+            <img src="imagenes/avatar.jpg" alt="Avatar del vendedor">
+            <div class="info-vendedor">
+                <h2>Nombre del Vendedor</h2>
+                <p>ID del Vendedor: <span id="idvendedor">123456</span></p>
+                <p>Identificación: <span id="identificacion">1234567890</span></p>
+                <p>Cargo: Vendedor</p>
+                <p>Correo electrónico: vendedor@example.com</p>
+                <p>Teléfono: +1234567890</p>
+            </div>
+        </div>
