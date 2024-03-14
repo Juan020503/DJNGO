@@ -1,13 +1,35 @@
 from django.shortcuts import render
-
-# Create your views here.
-from django.http import HttpResponse
-
+from . forms import UsuarioForm
 def inicio(request):
-    return HttpResponse("Inicio")
+    return render(request,"inicio.html")
 
 def pagina1(request):
-    return HttpResponse("Jepe")
+    return render(request,"pagina1.html")
 
 def pagina2(request):
-    return HttpResponse("Manu")
+    return render(request,"pagina2.html")
+
+from django.shortcuts import render
+from . forms import UsuarioForm
+
+def formulario(request):
+    if request.method == 'POST':
+        form = UsuarioForm(request.POST)
+        if form.is_valid():
+            form.save()
+            # hacer algo después de guardar los datos del usuario
+    else:
+        form = UsuarioForm()
+    return render(request, 'formulario.html', {'form': form})
+
+from django.shortcuts import render
+from .models import Tienda, Producto
+
+def tiendas(request):
+    tiendas = Tienda.objects.all()
+    return render(request, 'tiendas.html', {'tiendas': tiendas})
+
+def productos(request, tienda_id):
+    tienda = Tienda.objects.get(id=tienda_id)
+    productos = Producto.objects.filter(tienda=tienda)
+    return render(request, 'productos.html', {'tienda': tienda, 'productos': productos})
