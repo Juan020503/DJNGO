@@ -1,25 +1,139 @@
 {% load static %}
 
-<!DOCTYPE html>
 <html lang="es">
 <head>
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil del Vendedor</title>
     <link rel="stylesheet" type="text/css" href="{% static '/css/vendedor.css' %}">
 </head>
 <body>
-    <div class="contenedor">
-        <header>Perfil del Vendedor</header>
-        <div class="perfil-vendedor">
-            <img src="imagenes/avatar.jpg" alt="Avatar del vendedor">
-            <div class="info-vendedor">
-                <h2>Nombre del Vendedor</h2>
-                <p>ID del Vendedor: <span id="idvendedor">123456</span></p>
-                <p>Identificación: <span id="identificacion">1234567890</span></p>
-                <p>Cargo: Vendedor</p>
-                <p>Correo electrónico: vendedor@example.com</p>
-                <p>Teléfono: +1234567890</p>
+    <div class="contenedor-principal">
+        <div class="contenedor">
+            <header>Perfil del Vendedor</header>
+        </div>
+        <!-- Perfil 1 -->
+        <div class="contenedor">
+            <div class="perfil-vendedor">
+                <img src="{% static 'imagenes/Antonella.webp' %}" alt="Antonella">
+                <div class="info-vendedor">
+                    <h2>Jane Smith</h2>
+                    <p>ID del Vendedor: <span id="idvendedor">987654</span></p>
+                    <p>Identificación: <span id="identificacion">B5678C</span></p>
+                    <p>Cargo: Gerente de Ventas</p>
+                    <p>Correo electrónico: janesmith@gmail.com</p>
+                    <p>Teléfono: +9876543210</p>
+                </div>
             </div>
         </div>
+
+        <!-- Perfil 2 -->
+        <div class="contenedor">
+            <div class="perfil-vendedor">
+                <img src="{% static 'imagenes/bicho.jpg' %}" alt="Ronaldo">
+                <div class="info-vendedor">
+                    <h2>John Doe</h2>
+                    <p>ID del Vendedor: <span id="idvendedor">123456</span></p>
+                    <p>Identificación: <span id="identificacion">A1234B</span></p>
+                    <p>Cargo: Vendedor</p>
+                    <p>Correo electrónico: johndoe@yahoo.com</p>
+                    <p>Teléfono: +1234567890</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Perfil 3 -->
+<div class="contenedor">
+    <div class="perfil-vendedor">
+        <img src="{% static 'imagenes/georgina.jfif' %}" alt="georgina"> 
+         <div class="info-vendedor">
+            <h2>Sofía Ramírez</h2>
+            <p>ID del Vendedor: <span id="idvendedor">987654</span></p>
+            <p>Identificación: <span id="identificacion">I2345J</span></p>
+            <p>Cargo: Supervisor de Ventas</p>
+            <p>Correo electrónico: sofiaramirez@example.com</p>
+            <p>Teléfono: +9876543210</p>
+        </div>
+    </div>
+</div>
+
+<!-- Perfil 4 -->
+<div class="contenedor">
+    <div class="perfil-vendedor">
+
+        <img src="{% static 'imagenes/selena.webp' %}" alt="selena">
+        <div class="info-vendedor">
+            <h2>Maria García</h2>
+            <p>ID del Vendedor: <span id="idvendedor">246813</span></p>
+            <p>Identificación: <span id="identificacion">C1357D</span></p>
+            <p>Cargo: Representante de Ventas</p>
+            <p>Correo electrónico: mariagarcia@example.com</p>
+            <p>Teléfono: +2468135790</p>
+        </div>
+    </div>
+</div>
+
+<!-- Perfil 5 -->
+<div class="contenedor">
+    <div class="perfil-vendedor">
+        <img src="{% static 'imagenes/ney.avif' %}" alt="ney">
+        <div class="info-vendedor">
+            <h2>Carlos López</h2>
+            <p>ID del Vendedor: <span id="idvendedor">369852</span></p>
+            <p>Identificación: <span id="identificacion">D2468E</span></p>
+            <p>Cargo: Supervisor de Ventas</p>
+            <p>Correo electrónico: carloslopez@example.com</p>
+            <p>Teléfono: +3698521470</p>
+        </div>
+    </div>
+</div>
+
+<!-- Perfil 6 -->
+<div class="contenedor">
+    <div class="perfil-vendedor">
+
+        <img src="{% static 'imagenes/sophia.jpg' %}" alt="sophia">
+        <div class="info-vendedor">
+            <h2>Luisa Martínez</h2>
+            <p>ID del Vendedor: <span id="idvendedor">579123</span></p>
+            <p>Identificación: <span id="identificacion">E1234F</span></p>
+            <p>Cargo: Representante de Marketing</p>
+            <p>Correo electrónico: luisamartinez@example.com</p>
+            <p>Teléfono: +5791234567</p>
+        </div>
+    </div>
+</div>
+
+<!-- Perfil 7 -->
+<div class="contenedor">
+    <div class="perfil-vendedor">
+        <img src="{% static 'imagenes/messi.jfif' %}" alt="messi">
+        <div class="info-vendedor">
+            <h2>Pablo Rodríguez</h2>
+            <p>ID del Vendedor: <span id="idvendedor">798465</span></p>
+            <p>Identificación: <span id="identificacion">F5678G</span></p>
+            <p>Cargo: Asistente de Ventas</p>
+            <p>Correo electrónico: pablorodriguez@example.com</p>
+            <p>Teléfono: +7984651234</p>
+        </div>
+    </div>
+</div>
+
+<!-- Perfil 8 -->
+<div class="contenedor">
+    <div class="perfil-vendedor">
+        <img src="{% static 'imagenes/teilor.webp' %}" alt="teilor">
+        <div class="info-vendedor">
+            <h2>Ana Gutiérrez</h2>
+            <p>ID del Vendedor: <span id="idvendedor">135790</span></p>
+            <p>Identificación: <span id="identificacion">G7890H</span></p>
+            <p>Cargo: Coordinador de Ventas</p>
+            <p>Correo electrónico: anagutierrez@example.com</p>
+            <p>Teléfono: +1357902468</p>
+        </div>
+    </div>
+</div>
+    </div>
+</body>
+</html>
+</html>

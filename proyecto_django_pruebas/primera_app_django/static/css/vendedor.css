@@ -1,26 +1,13 @@
-/* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  min-height: 100vh;
+/* Estilos CSS para organizar los perfiles en una sola fila */
+.contenedor-principal {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #f3f3f3;
+  justify-content: space-between; /* Alinear los perfiles en la fila */
+  flex-wrap: nowrap; /* Evitar que se envuelvan a la siguiente línea */
+  overflow-x: auto; /* Agregar desplazamiento horizontal si se necesita */
 }
 
 .contenedor {
-  position: relative;
-  max-width: 700px;
-  width: 100%;
+  max-width: 350px;
   background: #fff;
   padding: 25px;
   border-radius: 8px;
